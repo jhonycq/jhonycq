@@ -1,0 +1,70 @@
+2023.09.17 12:05:25 INFO  Started: Metals version 1.0.1 in folders 'D:\INGESTAS_PROYECTO\Practicas_Scala\my_proyecto' for client Visual Studio Code 1.79.2.
+sep 17, 2023 12:05:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFORMACIÓN: Flyway Community Edition 9.21.2 by Redgate
+sep 17, 2023 12:05:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFORMACIÓN: See release notes here: https://rd.gt/416ObMi
+sep 17, 2023 12:05:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFORMACIÓN: 
+sep 17, 2023 12:05:26 PM org.flywaydb.core.FlywayExecutor execute
+INFORMACIÓN: Database: jdbc:h2:file:D:\INGESTAS_PROYECTO\Practicas_Scala\my_proyecto\.metals\metals (H2 2.1)
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFORMACIÓN: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.command.DbValidate validate
+INFORMACIÓN: Successfully validated 4 migrations (execution time 00:00.015s)
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFORMACIÓN: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFORMACIÓN: Current version of schema "PUBLIC": << Empty Schema >>
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFORMACIÓN: Migrating schema "PUBLIC" to version "1 - Create tables"
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFORMACIÓN: Migrating schema "PUBLIC" to version "2 - Server discovery"
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFORMACIÓN: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFORMACIÓN: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+sep 17, 2023 12:05:26 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFORMACIÓN: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.027s)
+2023.09.17 12:05:26 INFO  time: initialize in 0.68s
+2023.09.17 12:05:27 WARN  Build server is not auto-connectable.
+2023.09.17 12:05:27 WARN  no build target for: D:\INGESTAS_PROYECTO\Practicas_Scala\my_proyecto\src\main\scala\curso\udemy\Clases.scala
+2023.09.17 12:05:29 INFO  no build target found for D:\INGESTAS_PROYECTO\Practicas_Scala\my_proyecto\src\main\scala\curso\udemy\Clases.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.17 12:05:31 INFO  time: code lens generation in 1.67s
+2023.09.17 12:06:23 WARN  no build target for: D:\INGESTAS_PROYECTO\Practicas_Scala\my_proyecto\src\main\scala\curso\udemy\Clases.scala
+sep 17, 2023 12:06:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\INGESTAS_PROYECTO\Practicas_Scala\my_proyecto\src\main\scala\curso\udemy\Clases.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\INGESTAS_PROYECTO\Practicas_Scala\my_proyecto\src\main\scala\curso\udemy\Clases.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:647)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:672)
+	at java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2001)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\INGESTAS_PROYECTO\Practicas_Scala\my_proyecto\src\main\scala\curso\udemy\Clases.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:470)
+	at scala.meta.internal.metals.MetalsLspService.debugDiscovery(MetalsLspService.scala:1803)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:869)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.09.17 12:11:13 INFO  Shutting down server
+2023.09.17 12:11:13 INFO  shutting down Metals
+2023.09.17 12:11:13 INFO  Exiting server
